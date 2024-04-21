@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-screen h-screen flex  justify-center items-center flex-col ">
+        
+        <h1 class="text-5xl font-bold mb-7">Challenge </h1>
+        <form action="/<%= resp %> " method="post">
+          <h1 class="text-xl font-semibold mb-3 flex gap-5">
+            enter your player id :
+            <input type="text" name="player" id="player" class="w-24 h-8 border-black border-2">
+          </h1>
+          
+          <button type="submit" class="px-5 py-3 bg-red-600 text-xl font-semibold rounded-lg mt-5"><%= resp %></button>
+        </form>
+    
+      </div>
+</body>
+</html>

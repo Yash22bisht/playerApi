@@ -1,0 +1,40 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+  <!-- <link rel='stylesheet' href='src\output.css' /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="main w-screen h-screen bg-gradient-to-b from-gray-950 to-gray-800 flex justify-center items-center">
+
+    <div class="login w-[425px] h-[550px] bg- rounded-3xl bg-blue-700">
+
+      <div class="overlay w-full h-full bg- rounded-3xl flex gap-10 flex-col items-center pt-12 "
+        style=" background-color: rgba(0, 0, 0, 0.591);">
+        <h1 class="text-red-600 text-4xl font-bold  ">Sign in</h1>
+        <!-- <p class="text-l text-white"></p> -->
+        <form action="/login" method="post" class="flex justify-center items-center flex-col gap-12 mt-6">
+          <input type="text" name="email" id="email" placeholder="Email"
+            class="text-xl bg-transparent border-b-4 border-b-red-600 w-72 text-red-600 placeholder:text-white p-2"
+            required>
+          <input type="password" name="Password" id="Password" placeholder="Password"
+            class="text-xl bg-transparent border-b-4 border-b-red-600 w-72 p-2 placeholder:text-white text-red-600"
+            required>
+          <button type="submit"
+            class="w-40 text-xl text-white font-bold p-2 bg-red-600 rounded-3xl mx-auto">SignIn</button>
+          
+
+          <!-- <p class="text-red-600 ml-auto mb-2 ">Don't have an account? <a href="/register" class="text-white">Register Here</a></p> -->
+        </form>
+        <a href="/excelData"><button type="submit"
+          class="w-40 text-xl text-white font-bold p-2 bg-green-600 rounded-3xl mx-auto">Show Database</button></a>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
